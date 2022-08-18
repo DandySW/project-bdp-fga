@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Sistem Prediksi Tingkat Stres</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Sistem Prediksi Tingkat Stres</h1>
+              </div>
+              <form id="form-prediction">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Tingkat Mendengkur (dB)</span>
+                      <input class="form-control" type="text" placeholder="Tingkat Mendengkur (dB)" required/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Tingkat Pernapasan (bpm)</span>
+                      <input class="form-control" type="text" placeholder="Tingkat Pernapasan (bpm)" required/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Suhu Tubuh (°F)</span>
+                      <input class="form-control" type="text" placeholder="Suhu Tubuh (°F)" required/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Gerakan Kaki</span>
+                      <input class="form-control" type="text" placeholder="Gerakan Kaki" required/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Oksigen Dalam Darah</span>
+                      <input class="form-control" type="text" placeholder="Oksigen Dalam Darah" required/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Gerakan Mata</span>
+                      <input class="form-control" type="text" placeholder="Gerakan Mata" required/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Jam Tidur</span>
+                      <input class="form-control" type="text" placeholder="Jam Tidur" required/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Detak Jantung (bpm)</span>
+                      <input class="form-control" type="text" placeholder="Detak Jantung (bpm)" required/>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button class="submit-btn" onclick="get_prediction()">Prediksi</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <marquee style="color: #fff;" class="form-header">This is basic example of marquee</marquee>
+      </div>
+    </div>
+    <script src="eel.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
