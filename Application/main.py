@@ -1,3 +1,4 @@
+from turtle import position
 import eel
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
@@ -33,8 +34,8 @@ def prediction(user_input):
         array.append(norm)
     predict = rfc.predict([array])
     predict = predict[0]
-    print("Hasil prediksi: " + str(predict) + " - " + stres_level[predict])
-    return(int(predict))
+    # print("Hasil prediksi: " + str(predict) + " - " + stres_level[predict])
+    return(int(predict), stres_level[predict])
 
 
-eel.start("index.html")
+eel.start("index.html", size=(1280, 720))
