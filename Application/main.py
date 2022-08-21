@@ -1,4 +1,3 @@
-from turtle import position
 import eel
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler

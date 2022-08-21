@@ -44,12 +44,12 @@
   font-size: 58px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffc001;
+  color: #ffc43a;
   margin: 0px;
 }
 
 .booking-form > form {
-  background-color: #101113;
+  background-color: #000;
   padding: 30px 20px;
   border-radius: 3px;
 }
@@ -123,7 +123,7 @@
 
 .booking-form .submit-btn {
   color: #101113;
-  background-color: #ffc001;
+  background-color: #ffc43a;
   font-weight: 700;
   height: 50px;
   border: none;
