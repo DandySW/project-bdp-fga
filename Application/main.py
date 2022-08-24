@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
 
 eel.init("web")
 
@@ -23,6 +24,14 @@ X_train, X_test, Y_train, Y_test = train_test_split(
     X, Y, train_size=0.8, random_state=33)
 
 rfc = RandomForestClassifier(n_estimators=99).fit(X_train, Y_train)
+
+prediction = rfc.predict(X_test)
+
+cm = confusion_matrix(Y_test, prediction)
+print(f"Confusion Matrix:\n{cm}\n")
+
+acs = accuracy_score(Y_test, prediction)
+print(f"Accuracy Score: {acs}")
 
 
 @eel.expose
